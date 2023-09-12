@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header sectiom -->
+    <header>
+      <!-- nav part -->
+      <nav class="header container mx-auto my-14 flex justify-between bg-[#F85559] text-white p-8 rounded-full">
+        <div>
+          <ul class="lg:flex gap-4 mt-4 md:hidden max-sm:hidden sm:hidden">
+              <li><a href="/home">Home</a></li>
+              <li><a href="About Us">About Us</a></li>
+              <li><a href="/shop">Shop</a></li>
+              <li><a href="Allfruits">All Fruits</a></li>
+          </ul>
+      </div>
+      <div class="flex gap-2">
+          <img src="images/logo.png" alt="">
+          <h2 class="mt-4 text-lg font-bold">Fruit Burst</h2>
+      </div>
+      <div class="lg:inline-flex bg-white text-black px-2 rounded-full max-sm:hidden sm:hidden"> 
+        <input class="outline-none rounded-full" type="text" name="" id="" placeholder="Search here">
+          <svg class="mt-3" xmlns="http://www.w3.org/2000/svg" height="2.25em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </div>
+      <svg class="lg:hidden max-sm:block sm:block mt-4" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg> 
+      </nav>
+      <!-- banner part -->
+      <div class="carousel w-full mb-48">
+        <!-- carousel 1 -->
+        <div id="slide1" class="carousel-item relative w-full bg-[url('https://i.ibb.co/SP0x0zg/banner1.png')] bg-no-repeat bg-cover h-[1000px]">
+          <div class="text-white text-center justify-center">
+            <h2 class="font-semibold text-[60px] mt-60 ml-[700px]">Exotic tastes at your<br> doorstep</h2>
+          <p class="ml-[700px] mt-11">We supply highly quality organic products</p>
+          <button class="btn btn-error bg-[#F85559] text-white ml-[700px] mt-14">Shop Now</button>
+          <div class="flex text-center justify-center space-x-8 rounded-md mt-[300px] ml-[500px] border-solid border-1 border-gray-500 text-black w-3/4 bg-white">
+            <div>
+              <img src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit2.png" alt="">
+                <p>Orange</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit5.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+          </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>  
+        <!-- carousel 2 -->
+        <div id="slide2" class="carousel-item relative w-full bg-[url('https://i.ibb.co/5jhggzz/banner2.png')] bg-no-repeat bg-cover h-[1000px]">
+          <div class="text-white text-center justify-center">
+            <h2 class="font-semibold text-[60px] mt-60 ml-[700px]">Exotic tastes at your<br> doorstep</h2>
+          <p class="ml-[700px] mt-11">We supply highly quality organic products</p>
+          <button class="btn btn-error bg-[#F85559] text-white ml-[700px] mt-14">Shop Now</button>
+          <div class="flex text-center justify-center space-x-8 rounded-md mt-[300px] ml-[500px] border-solid border-1 border-gray-500 text-black w-3/4 bg-white">
+            <div>
+              <img src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit2.png" alt="">
+                <p>Orange</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit5.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+          </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>  
+        <!-- carousel 3 -->
+        <div id="slide3" class="carousel-item relative w-full bg-[url('https://i.ibb.co/DMnvF5K/banner3.png')] bg-no-repeat bg-cover h-[1000px]">
+          <div class="text-white text-center justify-center">
+            <h2 class="font-semibold text-[60px] mt-60 ml-[700px]">Exotic tastes at your<br> doorstep</h2>
+          <p class="ml-[700px] mt-11">We supply highly quality organic products</p>
+          <button class="btn btn-error bg-[#F85559] text-white ml-[700px] mt-14">Shop Now</button>
+          <div class="flex text-center justify-center space-x-8 rounded-md mt-[300px] ml-[500px] border-solid border-1 border-gray-500 text-black w-3/4 bg-white">
+            <div>
+              <img src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit2.png" alt="">
+                <p>Orange</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit5.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+          </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>  
+        <!-- carousel 4 -->
+        <div id="slide4" class="carousel-item relative w-full bg-[url('https://i.ibb.co/0t2BpLW/banner4.png')] bg-no-repeat bg-cover h-[1000px]">
+          <div class="text-white text-center justify-center">
+            <h2 class="font-semibold text-[60px] mt-60 ml-[700px]">Exotic tastes at your<br> doorstep</h2>
+          <p class="ml-[700px] mt-11">We supply highly quality organic products</p>
+          <button class="btn btn-error bg-[#F85559] text-white ml-[700px] mt-14">Shop Now</button>
+          <div class="flex text-center justify-center space-x-8 rounded-md mt-[300px] ml-[500px] border-solid border-1 border-gray-500 text-black w-3/4 bg-white">
+            <div>
+              <img src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit2.png" alt="">
+                <p>Orange</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </img>
+            </div>
+            <div>
+              <img src="images/fruit5.png" alt="">
+                <p>Mango</p>
+              </img>
+            </div>
+          </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>  
+      </div>
+    </header>
+    <!-- main part -->
+    <main>
+
+    </main>
+    <!-- footer section -->
+    <footer class="footer footer-center p-10 bg-black text-white text-base-content rounded">
+      <div class="flex gap-2">
+        <img src="images/logo.png" alt="">
+        <h2 class="mt-4 text-lg font-bold">Fruit Burst</h2>
+    </div>
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">Home</a> 
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Shop</a> 
+        <a class="link link-hover">All Fruits</a> 
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </nav> 
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+      </nav> 
+    </footer>
+</body>
+</html>
