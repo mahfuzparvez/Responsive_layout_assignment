@@ -6,6 +6,8 @@
     <title>Responsive</title>
     <!-- css link -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6c1f111da1.js" crossorigin="anonymous"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,6 +212,182 @@
     </header>
     <!-- main part -->
     <main>
+      <!-- Under the banner part- Deal Part -->
+      <section class="lg:flex justify-evenly mb-20 max-sm:text-center">
+        <div>
+          <h2 class="text-[50px] font-bold max-sm:-mt-24">Deal of the day</h2>
+          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex justify-between max-sm:mt-12 gap-8 text-center">
+          <div class="border-r-2 h-14">
+            <h2 class="text-[25px] font-bold mr-6">29</h2>
+            <p class="mr-6">Days</p>
+          </div>
+          <div class="border-r-2 h-14">
+            <h2 class="text-[25px] font-bold mr-6">15</h2>
+            <p class="mr-6">Hours</p>
+          </div>
+          <div class="border-r-2 h-14">
+            <h2 class="text-[25px] font-bold mr-6">25</h2>
+            <p class="mr-6">Minutes</p>
+          </div>
+          <div class="border-r-2 h-14">
+            <h2 class="text-[25px] font-bold mr-6">08</h2>
+            <p class="mr-6">Seconds</p>
+          </div>
+        </div>
+      </section>
+<!-- Under deal section -->
+<section class="lg:flex justify-center items-center max-sm:grid-cols-1 md:grid-cols-1 max-sm:ml-10 md:ml-10 gap-8 my-8">
+  <div class="card w-96 bg-base-100 max-sm:mb-6 md:mb-6 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Apples</p>
+      <div class="flex my-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <!-- Open the modal using ID.showModal() method -->
+    <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+   <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+    <img class="mx-auto" src="images/fruit8.png" alt="">
+    <h3 class="font-extrabold text-[30px]">Red Dragon</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="mx-auto my-4">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <button class="btn-ghost text-[#F85559] mr-4 p-2 rounded">close</button>
+    <button class="btn-ghost bg-[#F85559] text-white p-2 rounded">Buy Now</button>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button class="btn-ghost">close</button>
+  </form>
+   </dialog>
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 max-sm:mb-6 md:mb-6 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Apples</p>
+      <div class="flex my-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+   <dialog id="my_modal_2" class="modal">
+    <div class="modal-box">
+    <img class="mx-auto" src="images/fruit7.png" alt="">
+    <h3 class="font-extrabold text-[30px]">Orange</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="mx-auto my-4">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <button class="btn-ghost text-[#F85559] mr-4 p-2 rounded">close</button>
+    <button class="btn-ghost bg-[#F85559] text-white p-2 rounded">Buy Now</button>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button class="btn-ghost">close</button>
+  </form>
+   </dialog>
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 max-sm:mb-6 md:mb-6 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Apples</p>
+      <div class="flex my-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+   <dialog id="my_modal_3" class="modal">
+    <div class="modal-box">
+    <img class="mx-auto" src="images/fruit9.png" alt="">
+    <h3 class="font-extrabold text-[30px]">Banana</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="mx-auto my-4">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <button class="btn-ghost text-[#F85559] mr-4 p-2 rounded">close</button>
+    <button class="btn-ghost bg-[#F85559] text-white p-2 rounded">Buy Now</button>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button class="btn-ghost">close</button>
+  </form>
+   </dialog>
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 max-sm:mb-6 md:mb-6 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Apples</p>
+      <div class="flex my-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+   <dialog id="my_modal_4" class="modal">
+    <div class="modal-box">
+    <img class="mx-auto" src="images/fruit6.png" alt="">
+    <h3 class="font-extrabold text-[30px]">Apples</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="mx-auto my-4">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+    <button class="btn-ghost text-[#F85559] mr-4 p-2 rounded">close</button>
+    <button class="btn-ghost bg-[#F85559] text-white p-2 rounded">Buy Now</button>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button class="btn-ghost">close</button>
+  </form>
+   </dialog>
+    </div>
+  </div>
+</section>
+<div class="flex justify-center gap-4 my-12 place-content-center">
+  <button class="btn-secondary bg-[#F85559] px-6 py-3 rounded br-[#F85559]">Shop All</button>
+</div>
 
     </main>
     <!-- footer section -->
